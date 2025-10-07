@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co.com/N6bGRXfs/Taskflow.webp",
+    "title": "TaskFlow",
+    "companyName": "BrightSoft",
+    "id": 1,
+    "description": "TaskFlow helps users organize their personal and professional tasks with smart reminders, calendar integration, and progress tracking. The app provides a clean interface, offline support, and cloud sync across devices. Designed for productivity enthusiasts, it allows task categorization, priority settings, and seamless collaboration with colleagues or family members for efficient goal achievement.",
+    "size": 48,
+    "reviews": 12500,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TxfvL9vk/fitlife.jpg",
+    "title": "FitLife",
+    "companyName": "HealthTech",
+    "id": 2,
+    "description": "FitLife offers personalized workout plans, calorie tracking, and fitness challenges to help users stay motivated and achieve health goals. With video tutorials, progress graphs, and wearable device integration, the app ensures a comprehensive fitness experience. It also features community forums, diet tips, and rewards to make healthy living more enjoyable and consistent.",
+    "size": 62,
+    "reviews": 8700,
+    "ratingAvg": 4.3,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/MxZB1x3Y/brain.webp",
+    "title": "QuickNote",
+    "companyName": "SmartApps",
+    "id": 3,
+    "description": "QuickNote is a simple yet powerful notes app that lets users jot ideas instantly, attach images, and sync across devices. With customizable themes, voice-to-text, and offline support, it caters to students, professionals, and creatives alike. QuickNote ensures your ideas are safe, organized, and easily accessible anytime you need inspiration or reminders.",
+    "size": 28,
+    "reviews": 4600,
+    "ratingAvg": 4.1,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 1700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/s9fLk2wh/images.jpg",
+    "title": "PhotoSnap",
+    "companyName": "CreativeLens",
+    "id": 4,
+    "description": "PhotoSnap transforms your pictures with AI filters, professional editing tools, and ready-made presets. Whether capturing landscapes, portraits, or casual shots, users can enhance quality instantly. The app also supports RAW editing, batch processing, and sharing directly to social media. Designed for both beginners and experts, it makes photo editing creative, fast, and fun.",
+    "size": 85,
+    "reviews": 23000,
+    "ratingAvg": 4.7,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 15700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sv3dTp4c/travelmate.png",
+    "title": "TravelMate",
+    "companyName": "GlobalGo",
+    "id": 5,
+    "description": "TravelMate helps you plan dream vacations with flight bookings, hotel reservations, and AI-powered destination suggestions. Explore attractions with interactive maps, offline guides, and personalized itineraries. Users can track expenses, share plans with friends, and receive travel alerts in real time. TravelMate makes exploring the world effortless, safe, and enjoyable for everyone.",
+    "size": 70,
+    "reviews": 15800,
+    "ratingAvg": 4.6,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 9200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9kcJ0j34/cookmate.jpg",
+    "title": "CookBook",
+    "companyName": "KitchenHub",
+    "id": 6,
+    "description": "CookBook is your personal kitchen assistant with thousands of recipes, step-by-step video instructions, and shopping lists. It tailors meal plans based on dietary preferences and nutrition goals. Users can save favorites, create custom recipes, and sync across devices. CookBook inspires creativity, reduces cooking stress, and helps you discover new delicious meals daily.",
+    "size": 55,
+    "reviews": 6900,
+    "ratingAvg": 4.4,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fdP70wd9/learncode.webp",
+    "title": "LearnCode",
+    "companyName": "EduPro",
+    "id": 7,
+    "description": "LearnCode is an interactive coding app that makes programming fun and accessible. It offers bite-sized lessons, real projects, and quizzes to build practical skills. Users can practice multiple languages, track progress, and earn certificates. With community discussions, code challenges, and expert feedback, LearnCode empowers beginners and advanced learners to grow consistently.",
+    "size": 90,
+    "reviews": 11000,
+    "ratingAvg": 4.5,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sdpYGzg2/budget.webp",
+    "title": "BudgetBuddy",
+    "companyName": "FinTrack",
+    "id": 8,
+    "description": "BudgetBuddy helps manage your money smartly with expense tracking, savings goals, and insightful charts. It supports multiple currencies, automatic categorization, and bill reminders. The app encourages financial discipline while keeping things simple and user-friendly. With cloud backup and budgeting tips, BudgetBuddy ensures you stay on track with personal and family finances.",
+    "size": 40,
+    "reviews": 5000,
+    "ratingAvg": 4.2,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/M5Sn3MZR/logonice.jpg",
+    "title": "NewsFlash",
+    "companyName": "InfoStream",
+    "id": 9,
+    "description": "NewsFlash delivers breaking news, trending stories, and local updates tailored to your preferences. With offline reading, push alerts, and customizable feeds, it keeps you informed anytime, anywhere. The app supports multiple languages, integrates with podcasts, and includes fact-checking features. NewsFlash ensures reliable, fast, and diverse news for modern readers worldwide.",
+    "size": 33,
+    "reviews": 7200,
+    "ratingAvg": 4.0,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/C3wsH8dj/Shop-Logo.webp",
+    "title": "ShopEase",
+    "companyName": "MegaCart",
+    "id": 10,
+    "description": "ShopEase is an online shopping platform offering fashion, electronics, and groceries with fast delivery. It features secure payments, exclusive discounts, and personalized recommendations. Users can track orders, save wishlists, and enjoy seasonal sales. ShopEase combines convenience with affordability, making it the go-to marketplace for millions looking for seamless online shopping experiences.",
+    "size": 95,
+    "reviews": 45000,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 32200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nX9CqGr/ridenow.png",
+    "title": "MindCalm",
+    "companyName": "WellBeing Inc",
+    "id": 11,
+    "description": "MindCalm provides guided meditation, relaxation exercises, and sleep music designed to reduce stress and improve mindfulness. With daily reminders, mood tracking, and breathing practices, it supports mental wellness for all ages. Users can choose short or long sessions, track progress, and create routines. MindCalm promotes balance, calm, and emotional resilience every day.",
+    "size": 60,
+    "reviews": 8200,
+    "ratingAvg": 4.6,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/MxZB1x3Y/brain.webp",
+    "title": "RideNow",
+    "companyName": "GoFast",
+    "id": 12,
+    "description": "RideNow connects riders with drivers instantly, offering affordable and reliable transport. Users can book rides, estimate fares, and share trips for safety. The app supports multiple payment options, live tracking, and driver ratings. Whether commuting daily or traveling to the airport, RideNow provides fast, convenient, and secure travel anytime, anywhere.",
+    "size": 88,
+    "reviews": 35000,
+    "ratingAvg": 4.4,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 9000 },
+      { "name": "5 star", "count": 19300 }
+    ]
+  }
+]
