@@ -1,8 +1,67 @@
+import { Link } from "react-router";
+import Container from "../Container/Container";
+import { FaFacebook, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div>
-            <h1>This footer</h1>
+        <div className="bg-[#001931] pt-8 md:pt-16  px-2 md:px-0 ">
+            <Container>
+                {/*Footer discount section  */}
+                <div className="bg-fuchsia-200 px-6 py-4 md:py-8 lg:py-16 rounded-2xl">
+                    <h2 className="text-center text-xl md:text-4xl font-bold">Get discounts instantly------</h2>
+                    <p className="text-justify md:px-8 lg:px-72 lg:justify-center  py-4 md:py-8 ">To save you just have to log in to your account and look for the experiences with the green or yellow color code. On your first reservation you can enjoy a <span className="font-bold">10% discount.</span></p>
+
+                    <div className="flex justify-center">
+                        <input className="bg-white  rounded-l-full pl-6 py-2 md:w-[350px] lg:w-[550px]" type="text" placeholder="Enter your email" />
+                        <input className="bg-gray-700 text-white px-2 md:px-6 py-2 rounded-r-full cursor-pointer hover:bg-gray-500 duration-500" type="submit" value="Get Start" />
+                    </div>
+                </div>
+
+                {/* Footer items */}
+                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white  my-8">
+                    <div>
+                        <h3 className="md:text-xl lg:text-2xl underline font-semibold">Sign up for our Hero Apps</h3>
+                        <p className="text-sm text-gray-400 mt-3 pr-4">Don't worry, your account and look for the experiences with the green or yellow color code.</p>
+                    </div>
+                    <div>
+                        <h3 className="md:text-xl lg:text-2xl underline font-semibold">Helps and Services</h3>
+                        <div className="flex flex-col text-sm text-gray-400 space-y-2 mt-3">
+                            <Link className="hover:text-gray-300 hover:underline">How does it work</Link>
+                            <Link className="hover:text-gray-300 hover:underline">FAQS</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Contact</Link>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="md:text-xl lg:text-2xl underline font-semibold">To explore</h3>
+                        <div className="flex flex-col text-sm text-gray-400 space-y-2 mt-3">
+                            <Link className="hover:text-gray-300 hover:underline">How does it work</Link>
+                            <Link className="hover:text-gray-300 hover:underline">FAQS</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Contact</Link>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="underline md:text-xl lg:text-2xl font-semibold">To explore</h3>
+                        <div className="flex flex-col text-sm text-gray-400 space-y-2 mt-3">
+                            <Link className="hover:text-gray-300 hover:underline">How does it work</Link>
+                            <Link className="hover:text-gray-300 hover:underline">FAQS</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Contact</Link>
+                        </div>
+                    </div>
+                </div>
+                {/* social icon */}
+                <div className="flex gap-8 md:gap-12 justify-center border-t-1 border-gray-500 text-white text-3xl py-6">
+                    <Link><FaFacebook /></Link>
+                    <Link><FaYoutube /></Link>
+                    <Link><FaLinkedinIn /></Link>
+                    <Link><FaXTwitter /></Link>
+
+                </div>
+            </Container>
+
+            <div className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+            </div>
         </div>
     );
 };
