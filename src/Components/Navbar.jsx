@@ -18,9 +18,9 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="bg-[#FFFFFF] shadow relative">
+        <div className="bg-[#FFFFFF] shadow sticky top-0 z-10">
             <Container>
-                <div className="flex justify-between items-center px-2 md:px-0 py-4 ">
+                <div className="flex justify-between items-center px-2 md:px-0 py-4">
                     <div className="flex items-center gap-2">
                         <img className="h-[30px] md:h-[50px]" src={logo} alt="main-logo-img" />
                         <h1 className=" text-lg md:text-xl font-extrabold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
@@ -33,8 +33,6 @@ const Navbar = () => {
                         {
                             toggleMenu ? <IoClose /> : <RiMenu3Line />
                         }
-
-
                     </div>
 
                     <div className="hidden md:flex gap-6">
