@@ -10,3 +10,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+a.active{
+  color: blueviolet;
+  text-decoration: underline;
+}

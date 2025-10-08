@@ -12,7 +12,7 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const Links = <>
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/apps">Apps</NavLink>
         <NavLink to="/installation">Installation</NavLink>
     </>
@@ -21,12 +21,14 @@ const Navbar = () => {
         <div className="bg-[#FFFFFF] shadow sticky top-0 z-10">
             <Container>
                 <div className="flex justify-between items-center px-2 md:px-0 py-4">
-                    <div className="flex items-center gap-2">
-                        <img className="h-[30px] md:h-[50px]" src={logo} alt="main-logo-img" />
-                        <h1 className=" text-lg md:text-xl font-extrabold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-                            HERO.IO
-                        </h1>
-                    </div>
+                    <Link to="/">
+                        <div className="flex items-center gap-2">
+                            <img className="h-[30px] md:h-[50px]" src={logo} alt="main-logo-img" />
+                            <h1 className=" text-lg md:text-xl font-extrabold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                                HERO.IO
+                            </h1>
+                        </div>
+                    </Link>
 
                     {/* Mobile Menu */}
                     <div className="md:hidden text-2xl font-bold" onClick={() => setToggleMenu(!toggleMenu)}>

@@ -2,6 +2,7 @@ import Container from "../Container/Container";
 import platStore from "../assets/play.png"
 import appStore from "../assets/apps.png"
 import heroLogo from "../assets/hero.png"
+import { Link } from "react-router";
 
 const HeroBanner = () => {
     return (
@@ -16,14 +17,14 @@ const HeroBanner = () => {
 
                     {/* Hero button */}
                     <div className="flex gap-4 md:gap-12 justify-center py-6">
-                        <button className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
+                        <Link to="https://play.google.com" target="_blank"  className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
                             <img src={platStore} />
                             Google Play
-                        </button>
-                        <button className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
+                        </Link>
+                        <Link to="https://www.apple.com/app-store/" target="_blank" className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
                             <img src={appStore} />
                             Apps Store
-                        </button>
+                        </Link>
                     </div>
                     {/* Hero image */}
                     <div className="flex justify-center mt-8">

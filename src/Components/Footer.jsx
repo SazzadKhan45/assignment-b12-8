@@ -3,8 +3,8 @@ import Container from "../Container/Container";
 import { FaFacebook, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/logo.png"
-import { IoLogoGooglePlaystore } from "react-icons/io5";
-import { FaApple } from "react-icons/fa6";
+import platStore from "../assets/play.png"
+import appStore from "../assets/apps.png"
 
 const Footer = () => {
     return (
@@ -59,21 +59,18 @@ const Footer = () => {
                 {/* Apps store */}
 
                 <div className="md:flex justify-between items-center text-white my-12">
-                    <button className="outline px-4 py-1 rounded-full cursor-pointer mb-6 md:mb-0">Subscribe</button>
+                    <button className="outline px-6 py-2 rounded-full cursor-pointer mb-6 md:mb-0">Subscribe</button>
 
-                    <div className="flex gap-4">
-                        <button className="flex gap-2 items-center outline px-4 py-1 rounded-full cursor-pointer">
-                            <IoLogoGooglePlaystore className="text-2xl" />
-                            <div className="">
-                                <p className="text-sm">Hero Apps</p>
-                            </div>
-                        </button>
-                        <button className="flex gap-4 items-center outline px-4 py-1 rounded-full cursor-pointer">
-                            <FaApple className="text-2xl" />
-                            <div className="">
-                                <p className="text-sm">Apps Store</p>
-                            </div>
-                        </button>
+                    {/* Hero button */}
+                    <div className="flex gap-4 md:gap-12 justify-center py-6 text-black">
+                        <Link to="https://play.google.com" target="_blank" className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
+                            <img src={platStore} />
+                            Google Play
+                        </Link>
+                        <Link to="https://www.apple.com/app-store/" target="_blank" className="flex gap-2 items-center outline px-4 rounded py-2 cursor-pointer bg-white drop-shadow-2xl hover:bg-gray-500 hover:text-white duration-500">
+                            <img src={appStore} />
+                            Apps Store
+                        </Link>
                     </div>
                 </div>
                 {/* social icon */}
