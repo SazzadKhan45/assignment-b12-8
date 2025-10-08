@@ -13,8 +13,8 @@ const Navbar = () => {
 
     const Links = <>
         <NavLink>Home</NavLink>
-        <NavLink>Apps</NavLink>
-        <NavLink>Installation</NavLink>
+        <NavLink to="/apps">Apps</NavLink>
+        <NavLink to="/installation">Installation</NavLink>
     </>
 
     return (
@@ -41,7 +41,7 @@ const Navbar = () => {
                         {Links}
                     </div>
                     <div className="hidden md:flex">
-                        <button className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
+                        <button className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] ">
                             <Link className="flex items-center gap-2" to="https://github.com/SazzadKhan45"><FaGithub /> Contribute</Link>
                         </button>
                     </div>

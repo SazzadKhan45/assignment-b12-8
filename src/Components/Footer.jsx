@@ -2,6 +2,9 @@ import { Link } from "react-router";
 import Container from "../Container/Container";
 import { FaFacebook, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import logo from "../assets/logo.png"
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaApple } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -19,9 +22,12 @@ const Footer = () => {
                 </div>
 
                 {/* Footer items */}
-                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white  my-8">
+                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white mt-8  md:mt-16 lg:mt-24">
                     <div>
-                        <h3 className="md:text-xl lg:text-2xl underline font-semibold">Sign up for our Hero Apps</h3>
+                        <div className="flex gap-2 items-center">
+                            <img className="h-[40px]" src={logo} alt="" />
+                            <h2 className=" text-lg md:text-xl font-extrabold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">Hero Apps</h2>
+                        </div>
                         <p className="text-sm text-gray-400 mt-3 pr-4">Don't worry, your account and look for the experiences with the green or yellow color code.</p>
                     </div>
                     <div>
@@ -35,18 +41,39 @@ const Footer = () => {
                     <div>
                         <h3 className="md:text-xl lg:text-2xl underline font-semibold">To explore</h3>
                         <div className="flex flex-col text-sm text-gray-400 space-y-2 mt-3">
-                            <Link className="hover:text-gray-300 hover:underline">How does it work</Link>
-                            <Link className="hover:text-gray-300 hover:underline">FAQS</Link>
-                            <Link className="hover:text-gray-300 hover:underline">Contact</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Our teams</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Experience</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Blog</Link>
                         </div>
                     </div>
                     <div>
-                        <h3 className="underline md:text-xl lg:text-2xl font-semibold">To explore</h3>
+                        <h3 className="underline md:text-xl lg:text-2xl font-semibold">Other possibilities</h3>
                         <div className="flex flex-col text-sm text-gray-400 space-y-2 mt-3">
-                            <Link className="hover:text-gray-300 hover:underline">How does it work</Link>
-                            <Link className="hover:text-gray-300 hover:underline">FAQS</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Give away</Link>
+                            <Link className="hover:text-gray-300 hover:underline">Cash back</Link>
                             <Link className="hover:text-gray-300 hover:underline">Contact</Link>
                         </div>
+                    </div>
+                </div>
+
+                {/* Apps store */}
+
+                <div className="md:flex justify-between items-center text-white my-12">
+                    <button className="outline px-4 py-1 rounded-full cursor-pointer mb-6 md:mb-0">Subscribe</button>
+
+                    <div className="flex gap-4">
+                        <button className="flex gap-2 items-center outline px-4 py-1 rounded-full cursor-pointer">
+                            <IoLogoGooglePlaystore className="text-2xl" />
+                            <div className="">
+                                <p className="text-sm">Hero Apps</p>
+                            </div>
+                        </button>
+                        <button className="flex gap-4 items-center outline px-4 py-1 rounded-full cursor-pointer">
+                            <FaApple className="text-2xl" />
+                            <div className="">
+                                <p className="text-sm">Apps Store</p>
+                            </div>
+                        </button>
                     </div>
                 </div>
                 {/* social icon */}

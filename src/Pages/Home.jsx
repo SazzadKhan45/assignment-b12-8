@@ -1,9 +1,14 @@
 import React from 'react';
+import HeroBanner from '../Components/HeroBanner';
 
 const Home = () => {
     return (
-        <div>
-            <h1>I am home</h1>
+        <div className='bg-[#f1f1f1]'>
+            <HeroBanner/>
+
+
+            {/* Dynamic data load */}
+
         </div>
     );
 };
