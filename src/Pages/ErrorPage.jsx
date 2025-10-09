@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Container from "../Container/Container";
-import errorImg from "../assets/error-404.png"
+import errorImg from "../assets/error-404.png";
 
 const ErrorPage = () => {
     return (

@@ -8,12 +8,12 @@ import appStore from "../assets/apps.png"
 
 const Footer = () => {
     return (
-        <div className="bg-[#001931] pt-8 md:pt-16  px-2 md:px-0 ">
+        <div className="bg-[#001931] pt-8 px-2 md:px-0 ">
             <Container>
                 {/*Footer discount section  */}
-                <div className="bg-fuchsia-200 px-6 py-4 md:py-8 lg:py-16 rounded-2xl">
+                <div className="bg-fuchsia-200 px-6 py-4 md:py-8 rounded-2xl">
                     <h2 className="text-center text-xl md:text-4xl font-bold">Get discounts instantly------</h2>
-                    <p className="text-justify md:px-8 lg:px-72 lg:justify-center  py-4 md:py-8 ">To save you just have to log in to your account and look for the experiences with the green or yellow color code. On your first reservation you can enjoy a <span className="font-bold">10% discount.</span></p>
+                    <p className="text-justify md:px-8 lg:px-72 lg:justify-center  py-4 ">To save you just have to log in to your account and look for the experiences with the green or yellow color code. On your first reservation you can enjoy a <span className="font-bold">10% discount.</span></p>
 
                     <div className="flex justify-center">
                         <input className="bg-white  rounded-l-full pl-6 py-2 md:w-[350px] lg:w-[550px]" type="text" placeholder="Enter your email" />
@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 {/* Footer items */}
-                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white mt-8  md:mt-16 lg:mt-24">
+                <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white mt-8 md:mt-12 ">
                     <div>
                         <div className="flex gap-2 items-center">
                             <img className="h-[40px]" src={logo} alt="" />
@@ -58,7 +58,7 @@ const Footer = () => {
 
                 {/* Apps store */}
 
-                <div className="md:flex justify-between items-center text-white my-12">
+                <div className="md:flex justify-between items-center text-white my-4">
                     <button className="outline px-6 py-2 rounded-full cursor-pointer mb-6 md:mb-0">Subscribe</button>
 
                     {/* Hero button */}
@@ -74,7 +74,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* social icon */}
-                <div className="flex gap-8 md:gap-12 justify-center border-t-1 border-gray-500 text-white text-3xl py-6">
+                <div className="flex gap-8 md:gap-12 justify-center border-t-1 border-gray-500 text-white text-2xl py-4">
                     <Link><FaFacebook /></Link>
                     <Link><FaYoutube /></Link>
                     <Link><FaLinkedinIn /></Link>

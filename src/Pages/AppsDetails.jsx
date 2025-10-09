@@ -7,6 +7,8 @@ import starImg from "../assets/icon-ratings.png"
 import { toast } from "react-toastify";
 import { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, } from "recharts";
+import DynamicPageError from "./DynamicPageError";
+
 
 const AppsDetails = () => {
 
@@ -15,6 +17,10 @@ const AppsDetails = () => {
     const { appsData } = useHeroApps();
 
     const singleApp = appsData.find(app => app.id === parseInt(id));
+
+    if (!singleApp) {
+        return < DynamicPageError />;
+    }
 
     if (!singleApp) {
         return (
@@ -34,6 +40,7 @@ const AppsDetails = () => {
     const { image, title, description, downloads, ratingAvg, reviews, size, ratings } = singleApp;
 
     const reChartInfo = [...ratings].sort((a, b) => parseInt(b.name) - parseInt(a.name));
+    
 
     // console.log(singleApp)
 
@@ -48,6 +55,7 @@ const AppsDetails = () => {
 
             if (isDuplicate) {
                 toast('Apps Already Installed')
+                setInstall(true)
                 return;
             }
             updateAppsList = [...appsListToAdd, singleApp];
@@ -60,6 +68,8 @@ const AppsDetails = () => {
         localStorage.setItem('appsList', JSON.stringify(updateAppsList));
         setInstall(true);
     };
+
+
 
     return (
         <div className="bg-[#f1f1f1] py-8 px-2 md:px-0">
@@ -92,10 +102,12 @@ const AppsDetails = () => {
                                     <h2 className="text-3xl font-bold">{reviews / 1000}K</h2>
                                 </div>
                             </div>
+
+
                             {/* Apps add to localstorage btn */}
-                            <button onClick={() => handleAppsAddLocalStorage()} className="bg-[#00d390] text-white font-medium px-4 md:px-8 py-1.5 rounded-lg cursor-pointer mt-6">
+                            <button onClick={() => handleAppsAddLocalStorage()} className={` text-white font-medium px-4 md:px-8 py-1.5 rounded-lg cursor-pointer mt-6 ${install ? 'bg-gray-400':'bg-[#00d390]'}`}>
                                 {
-                                    install ? 'Install' : `Install Now (${size}) MB`
+                                    install ? 'Installed' : `Install Now (${size}) MB`
                                 }
                             </button>
 

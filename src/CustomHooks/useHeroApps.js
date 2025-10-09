@@ -8,7 +8,7 @@ const useHeroApps = ()=>{
     useEffect(()=>{
         setLoading(true)
 
-        fetch('../heroapps.json')
+        fetch('/heroapps.json')
         .then(res => res.json())
         .then(data =>{
             setAppsData(data)

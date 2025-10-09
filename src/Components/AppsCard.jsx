@@ -9,7 +9,7 @@ const AppsCard = ({ app }) => {
     // console.log(app)
     return (
         <Link to={`/app/${id}`}>
-            <div className='bg-white px-4 py-6 rounded-lg'>
+            <div className='bg-white px-4 py-6 rounded-lg hover:scale-105 duration-700'>
                 <img className='h-[250px] md:h-[240px] lg:h-[300px] w-full rounded-lg border-2 border-gray-200' src={image} alt={title} />
                 <h3 className='text-lg md:text-xl font-medium py-4'>{title}</h3>
                 <div className='flex justify-between'>
