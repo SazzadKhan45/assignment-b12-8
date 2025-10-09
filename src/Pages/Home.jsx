@@ -23,7 +23,7 @@ const Home = () => {
 
                 {/* Center button */}
                 <div className="flex justify-center mt-6">
-                    <button className="px-16 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] drop-shadow-2xl">
+                    <button className="px-12 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] drop-shadow-2xl">
                         <Link to="/apps">Show All</Link>
                     </button>
                 </div>

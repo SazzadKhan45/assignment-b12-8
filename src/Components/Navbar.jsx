@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex">
                         <button className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] ">
-                            <Link className="flex items-center gap-2" to="https://github.com/SazzadKhan45"><FaGithub /> Contribute</Link>
+                            <Link className="flex items-center gap-2" to="https://github.com/SazzadKhan45" target="_blank"><FaGithub /> Contribute</Link>
                         </button>
                     </div>
                 </div>
