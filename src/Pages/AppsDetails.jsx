@@ -1,9 +1,10 @@
 import { useParams } from "react-router";
 import useHeroApps from "../CustomHooks/useHeroApps";
 import Container from "../Container/Container";
-import { PiDownloadSimpleBold } from "react-icons/pi";
-import { FaStar } from "react-icons/fa";
 import ReviewsImg from "../assets/icon-review.png"
+import downloadImg from "../assets/icon-downloads.png"
+import starImg from "../assets/icon-ratings.png"
+import { toast } from "react-toastify";
 
 const AppsDetails = () => {
     const { id } = useParams();
@@ -23,8 +24,31 @@ const AppsDetails = () => {
         );
     }
 
-    const { image, title, description, downloads, ratingAvg, reviews } = singleApp;
-    console.log(singleApp)
+    const { image, title, description, downloads, ratingAvg, reviews, size } = singleApp;
+
+    // console.log(singleApp)
+
+    const handleAppsAddLocalStorage = () => {
+
+        const appsListToAdd = JSON.parse(localStorage.getItem('appsList'));
+        let updateAppsList =[];
+
+        if(appsListToAdd){
+
+            const isDuplicate =appsListToAdd.some(app => app.id === singleApp.id);
+            
+            if(isDuplicate){
+                toast('This is Apps Already Installed')
+                return;
+            }
+            updateAppsList= [...appsListToAdd, singleApp];
+        }
+        else{
+            updateAppsList.push(singleApp);
+        }
+
+        localStorage.setItem('appsList', JSON.stringify(updateAppsList));
+    }
 
     return (
         <div className="bg-[#f1f1f1] py-8 px-2 md:px-0">
@@ -40,29 +64,31 @@ const AppsDetails = () => {
                                 <p className="text-gray-500">Developed by <span className="font-extrabold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">productive.io</span></p>
                             </div>
                             <div className="divider "></div>
-                            <div className="flex gap-4 md:gap-8 lg:gap-12">
+                            <div className="flex gap-4 md:gap-8 lg:gap-24">
                                 <div className="space-y-1">
-                                    <h3 className="text-[#00D390] text-4xl"><PiDownloadSimpleBold /></h3>
+                                    <img src={downloadImg} />
                                     <p className="text-gray-500">Downloads</p>
                                     <h2 className="text-3xl font-bold">{downloads / 100000}M</h2>
                                 </div>
                                 <div className="space-y-1">
-                                    <h3 className="text-[#FF8811] text-4xl"><FaStar /></h3>
+                                    <img src={starImg} />
                                     <p className="text-gray-500">Average Ratings</p>
                                     <h2 className="text-3xl font-bold">{ratingAvg}</h2>
                                 </div>
                                 <div className="space-y-1">
                                     <img src={ReviewsImg} />
                                     <p className="text-gray-500">Total Reviews</p>
-                                    <h2 className="text-3xl font-bold">{reviews/1000}K</h2>
+                                    <h2 className="text-3xl font-bold">{reviews / 1000}K</h2>
                                 </div>
                             </div>
-                            <button className="bg-[#00d390] text-white font-medium px-4 md:px-8 py-1.5 rounded-lg cursor-pointer mt-6">Install Now 291 MB</button>
+                            {/* Apps add to localstorage btn */}
+                            <button onClick={handleAppsAddLocalStorage} className="bg-[#00d390] text-white font-medium px-4 md:px-8 py-1.5 rounded-lg cursor-pointer mt-6">Install Now ({size}) MB</button>
+
                         </div>
                     </div>
-                    <div className="mt-4">
-
-                        <p className="text-justify mt-2">{description}</p>
+                    <div className="mt-6">
+                        <h2 className="text-2xl font-semibold underline">Apps Details</h2>
+                        <p className="text-gray-600 text-justify mt-2">{description}</p>
                     </div>
                 </div>
             </Container>
