@@ -11,6 +11,7 @@ const Home = () => {
 
     return (
         <div className='bg-[#f1f1f1] pb-16'>
+
             <HeroBanner />
 
             {/* Dynamic data load */}
