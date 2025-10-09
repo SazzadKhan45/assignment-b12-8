@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 
 const Apps = () => {
-    const { appsData } = useHeroApps();
+    const { appsData, loading } = useHeroApps();
     const [searchApp, setSearchApps] = useState('');
 
     const searchWord = searchApp.trim().toLowerCase();
@@ -50,25 +50,42 @@ const Apps = () => {
                 </div>
 
                 {/* dynamic data load */}
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-8 pt-4 px-2 md:px-0'>
-                    {searchApps.length > 0 ? (
-                        searchApps.map(app => (
-                            <AppsCard key={app.id} app={app} />
-                        ))
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-8 pt-4 px-2 md:px-0">
+                    {loading ? (
+                        // Loading State
+                        <div className="col-span-full flex justify-center items-center py-12">
+                            <div className="flex flex-col items-center">
+                                <div className="w-12 h-12 border-4 border-purple-400 border-t-transparent rounded-full animate-spin"></div>
+                                <p className="text-gray-500 mt-4">Loading apps...</p>
+                            </div>
+                        </div>
+                    ) : searchApps.length > 0 ? (
+                        // Show apps if found
+                        searchApps.map((app) => <AppsCard key={app.id} app={app} />)
                     ) : (
+                        // Not Found Message
                         <div className="col-span-full flex justify-center items-center py-12">
                             <div>
-                                <img className="mx-auto" src={notApps} />
+                                <img className="mx-auto" src={notApps} alt="Not found" />
                                 <div className="text-center">
-                                    <h2 className="text-gray-500 text-3xl font-medium py-6">OPPS!! APP NOT FOUND</h2>
-                                    <p className="text-gray-500 mb-6">The App you are requesting is not found on our system.  please try another apps</p>
-                                    <Link className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] " to="/">Go Back!</Link>
+                                    <h2 className="text-gray-500 text-3xl font-medium py-6">
+                                        OOPS!! APP NOT FOUND
+                                    </h2>
+                                    <p className="text-gray-500 mb-6">
+                                        The app you are requesting is not found in our system. Please try another search.
+                                    </p>
+                                    <Link
+                                        className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"
+                                        to="/"
+                                    >
+                                        Go Back!
+                                    </Link>
                                 </div>
-
                             </div>
                         </div>
                     )}
                 </div>
+
             </Container>
         </div>
     );

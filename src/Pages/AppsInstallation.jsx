@@ -3,6 +3,8 @@ import Container from "../Container/Container";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { toast } from "react-toastify";
+import notApps from "../assets/App-Error.png"
+import { Link } from "react-router";
 
 
 const AppsInstallation = () => {
@@ -66,7 +68,8 @@ const AppsInstallation = () => {
 
 
                 <div className="pb-6">
-                    {
+
+                    {sortApps.length > 0 ?
                         sortApps.map(app => <div key={app.id}>
                             <div className="flex justify-between items-center bg-white p-4 mb-4 rounded-lg">
                                 <div className="flex gap-4">
@@ -74,7 +77,7 @@ const AppsInstallation = () => {
                                     <div>
                                         <h2 className="text-lg font-medium">{app.title}</h2>
 
-                                        <div className="flex items-center gap-3 md:gap-5">
+                                        <div className="flex items-center gap-2 text-sm  md:text-lg md:gap-5">
                                             <p className="flex items-center gap-2 text-green-600"><MdOutlineFileDownload className=" text-xl" />{app.downloads / 100000}M</p>
                                             <p className="flex items-center gap-2 text-[#FF8811]"><FaStar />{app.ratingAvg}</p>
                                             <p className="text-gray-600">{app.size}MB</p>
@@ -82,9 +85,25 @@ const AppsInstallation = () => {
 
                                     </div>
                                 </div>
-                                <button onClick={() => handeUnstallApps(app.id)} className="bg-[#00d390] text-white font-semibold px-3 md:px-5 py-2 rounded-xl cursor-pointer">Uninstall</button>
+                                <button onClick={() => handeUnstallApps(app.id)} className="bg-[#00d390] text-white md:font-semibold px-2 md:px-5 py-1 md:py-2 rounded-xl cursor-pointer">Uninstall</button>
                             </div>
-                        </div>)
+                        </div>) : (
+                            <div className="col-span-full flex justify-center items-center py-12">
+                                <div>
+                                    <img className="mx-auto" src={notApps} />
+                                    <div className="text-center">
+                                        <h2 className="text-gray-500 text-3xl font-medium py-6">APP NOT INSTALLED</h2>
+                                        <p className="text-gray-500 mb-6">The App you are requesting is not found on our system.  please try another apps</p>
+                                        <Link className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] " to="/">Go Back!</Link>
+                                    </div>
+
+                                </div>
+                            </div>
+                        )}
+
+                    {
+
+
                     }
                 </div>
             </Container>

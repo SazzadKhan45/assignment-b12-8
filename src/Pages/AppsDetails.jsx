@@ -20,9 +20,12 @@ const AppsDetails = () => {
         return (
             <div className="bg-[#f1f1f1] py-8">
                 <Container>
-                    <p className="text-center text-red-500 font-semibold">
-                        <span className="loading loading-bars loading-xl"></span>
-                    </p>
+                    <div className="col-span-full flex justify-center items-center py-12">
+                        <div className="flex flex-col items-center">
+                            <div className="w-12 h-12 border-4 border-purple-400 border-t-transparent rounded-full animate-spin"></div>
+                            <p className="text-gray-500 mt-4">Loading apps...</p>
+                        </div>
+                    </div>
                 </Container>
             </div>
         );
