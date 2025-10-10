@@ -16,7 +16,7 @@ const Home = () => {
 
             {/* Dynamic data load */}
             <Container>
-                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 px-2 md:px-0'>
+                <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 px-2 lg:px-0'>
                     {loading ?
                         <div className="col-span-full flex justify-center items-center py-12">
                             <div className="flex flex-col items-center">

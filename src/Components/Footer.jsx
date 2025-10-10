@@ -8,7 +8,7 @@ import appStore from "../assets/apps.png"
 
 const Footer = () => {
     return (
-        <div className="bg-[#001931] pt-8 px-2 md:px-0 ">
+        <div className="bg-[#001931] pt-8 px-2 lg:px-0 ">
             <Container>
                 {/*Footer discount section  */}
                 <div className="bg-fuchsia-200 px-6 py-4 md:py-8 rounded-2xl">
