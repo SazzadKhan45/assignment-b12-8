@@ -25,7 +25,8 @@ const Home = () => {
                             </div>
                         </div>
 
-                        : showApps.map(app => (
+                        :
+                        showApps.map(app => (
                             <AppsCard key={app.id} app={app}></AppsCard>
                         ))
                     }
